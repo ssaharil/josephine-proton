@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Josephine Proton | Kalkulator Pinjaman Kereta</title>
+<meta name="description" content="Rancang bajet kereta bersama Josephine, penasihat jualan Proton di Benoni, Papar. Kira anggaran ansuran dan semak kemampuan anda secara percuma, tanpa pendaftaran.">
+<meta name="theme-color" content="#101e2b">
+<style>
+:root{font-family:"Segoe UI",Inter,ui-sans-serif,system-ui,sans-serif;color:#172a38;background:#f6f7f5;--navy:#101e2b;--muted:#64727c;--accent:#ffc09a;--mint:#c6f3dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button,a,input,select,summary{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #db7738;outline-offset:5px}h1,h2,h3,p{margin-top:0}p{line-height:1.7}.wrap{width:min(1120px,100% - 48px);margin-inline:auto}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#955329;margin-bottom:16px}.muted{color:var(--muted);font-size:14px}.section{padding:86px 0}.section-heading{max-width:620px;margin-bottom:32px}.section-heading h2{font-size:clamp(28px,3.3vw,39px);line-height:1.18;letter-spacing:-1.2px;margin-bottom:14px}.section-heading p:last-child{margin-bottom:0;color:var(--muted)}
+.site-header{background:var(--navy);color:#fff;border-bottom:1px solid #ffffff14}.nav{display:flex;justify-content:space-between;align-items:center;min-height:80px;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:18px;letter-spacing:1px}.brand-mark{width:34px;height:34px;display:grid;place-items:center;border:1px solid #ffc09a70;border-radius:10px;color:var(--accent);font-size:21px;transform:rotate(-5deg)}.brand span:last-child{color:var(--accent)}.nav-links{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:600}.nav-links>a:not(.nav-cta){color:#c0cbd4}.nav-cta{padding:11px 18px;border:1px solid #ffffff40;border-radius:100px}.nav a:hover{color:var(--accent)}
+.brand-copy{display:flex;flex-direction:column;gap:4px;line-height:1.1}.brand .brand-name{color:#fff}.brand .brand-tag{font-size:9px;letter-spacing:1.2px;color:var(--accent)}
+.hero{background:radial-gradient(ellipse at 90% 45%,#23394c 0,transparent 55%),var(--navy);color:#fff;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:70px;padding-block:76px 82px}.hero .eyebrow{color:var(--accent);display:flex;align-items:center;gap:10px}.hero .eyebrow:before{content:"";width:22px;height:2px;background:var(--accent)}.hero h1{font-size:clamp(42px,5.2vw,65px);line-height:1.07;letter-spacing:-2.8px;margin-bottom:24px;font-weight:800}.hero h1 span{color:var(--accent)}.hero-copy{max-width:440px;color:#bdc9d3;font-size:16px}.hero-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;justify-content:center;align-items:center;gap:26px;border:0;border-radius:8px;background:var(--mint);color:#153a2a;font-weight:750;font-size:14px;padding:17px 22px;cursor:pointer;transition:background .15s}.button:hover{background:#a9eac8}.text-link{font-size:13px;color:#d8e1e7;border-bottom:1px solid #647988;padding-bottom:4px}.hero-footnote{font-size:11px;color:#98aab7;margin:18px 0 0}
+.journey{position:relative;padding:32px;border:1px solid #ffffff25;border-radius:20px;background:linear-gradient(145deg,#ffffff0b,#ffffff03);box-shadow:0 24px 60px #00000018}.journey-top{display:flex;justify-content:space-between;align-items:center;gap:14px;font-size:10px;font-weight:700;letter-spacing:2px;color:#afbdc9}.journey-top span:last-child{color:var(--mint);border:1px solid #c6f3dc40;padding:6px 9px;border-radius:50px;letter-spacing:1px}.journey h2{font-size:29px;font-weight:600;line-height:1.25;letter-spacing:-.7px;max-width:280px;margin:28px 0 16px}.road-art{display:block;width:100%;height:auto;color:var(--accent);margin:0 0 20px}.journey-bottom{display:flex;gap:14px;align-items:center;border-top:1px solid #ffffff20;padding-top:22px}.journey-icon{display:grid;place-items:center;flex-shrink:0;width:42px;height:42px;border-radius:12px;background:#c6f3dc12;color:var(--mint);font-size:21px}.journey-bottom strong{display:block;font-size:14px;margin-bottom:5px}.journey-bottom p{font-size:12px;color:#aabac6;margin:0}
+.advisor-card{display:flex;align-items:flex-start;gap:14px;max-width:440px;margin-top:28px;padding:18px;border:1px solid #ffffff25;border-radius:12px;background:#ffffff06}.advisor-card:hover{background:#ffffff0d;border-color:#c6f3dc70}.advisor-avatar{flex-shrink:0;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;background:#ffc09a1a;border:1px solid #ffc09a40;color:var(--accent);font-size:21px;font-weight:700}.advisor-copy{display:flex;flex-direction:column;gap:5px;min-width:0}.advisor-copy strong{font-size:14px;letter-spacing:1px}.advisor-role{font-size:12px;color:#d2dde5}.advisor-location{font-size:11px;line-height:1.6;color:#aabac6}.advisor-cta{display:inline-flex;align-items:center;gap:8px;margin-top:5px;color:var(--mint);font-size:12px;line-height:1.6;font-weight:650}
+.assurance{background:#edf0ec;border-bottom:1px solid #e0e5df}.assurance-grid{display:grid;grid-template-columns:repeat(3,1fr);padding-block:25px}.assurance-item{display:flex;gap:12px;justify-content:center;align-items:center;font-size:13px}.assurance-item+.assurance-item{border-left:1px solid #d4dcd4}.check{color:#286143;font-size:16px}.assurance-item strong{display:block;font-size:13px}.assurance-item small{display:block;color:var(--muted);margin-top:3px;font-size:11px}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{padding:28px;background:white;border:1px solid #e4e8e2;border-radius:12px}.step-number{display:inline-block;color:#966043;background:#fff1e6;border-radius:7px;padding:8px 10px;font-size:12px;font-weight:800;letter-spacing:1px;margin-bottom:24px}.step h3{font-size:18px;letter-spacing:-.3px;margin-bottom:10px}.step p{font-size:14px;color:var(--muted);margin:0}
+.calculator-section{background:#fff;border-block:1px solid #e4e8e2}.calculator-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:32px}.calculator-heading .section-heading{margin:0}.privacy-tag{font-size:11px;color:#41634e;background:#eef6ef;border-radius:50px;padding:10px 14px;white-space:nowrap}.calculator-grid{display:grid;grid-template-columns:1.2fr .9fr;gap:24px;align-items:start}.card{border:1px solid #e1e6e1;border-radius:14px;padding:30px;background:#fafbf9}.card h3{font-size:20px;letter-spacing:-.5px;margin-bottom:8px}.card>.muted{margin-bottom:24px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:20px 18px}label{display:block;font-size:12px;font-weight:700;margin-bottom:8px}input,select{width:100%;min-width:0;border:1px solid #d5ddd7;border-radius:7px;background:#fff;padding:13px 12px;color:#172a38;min-height:48px}input:focus,select:focus{outline:2px solid #4a8c6b;outline-offset:2px}.calculate{width:100%;margin-top:24px;justify-content:space-between;background:var(--navy);color:white}.calculate:hover{background:#284354}.note{font-size:11px;line-height:1.75;color:var(--muted);margin:18px 0 0}
+.estimate{background:var(--navy);color:#fff;border-color:var(--navy)}.estimate>.muted{color:#b1c0cc}.result-label{color:var(--accent);font-size:10px;letter-spacing:1.7px;font-weight:700;margin:26px 0 10px}.amount{font-size:clamp(32px,4vw,46px);font-weight:750;letter-spacing:-1.6px;line-height:1.2}.payment-period{font-size:12px;color:#aabbc8;margin:6px 0 20px}#summary{font-size:12px;color:#bdc9d3;line-height:1.6;margin-bottom:24px}.stat{display:flex;justify-content:space-between;align-items:baseline;gap:16px;border-top:1px solid #ffffff1c;padding:16px 0;font-size:12px;color:#bdc9d3}.stat strong{color:white;text-align:right;font-size:13px}.status{font-size:12px;font-weight:700;line-height:1.6;padding:14px;border-radius:8px;background:#ffffff10;margin-top:10px}.ok{background:#c6f3dc;color:#193f2b}.warn{background:#ffe4bd;color:#664312}.estimate .note{color:#aabac6}.estimate .note strong{color:#dce5eb}
+.faq-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.faq-layout .section-heading{margin:0}.faq-list{border-top:1px solid #dce2db}details{border-bottom:1px solid #dce2db;padding:0 2px}summary{cursor:pointer;list-style:none;padding:22px 28px 22px 0;position:relative;font-size:14px;font-weight:650;line-height:1.5}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:2px;top:21px;color:#996142;font-size:20px;font-weight:400}details[open] summary:after{content:"−"}details p{font-size:13px;color:var(--muted);padding:0 28px 20px 0;margin:0}
+.closing{padding-bottom:72px}.closing-inner{display:flex;justify-content:space-between;align-items:center;gap:32px;padding:42px 46px;border-radius:15px;background:#ede7dc}.closing h2{font-size:30px;letter-spacing:-1px;line-height:1.2;margin-bottom:10px}.closing p{font-size:14px;color:#62665f;margin:0}.closing .button{background:var(--navy);color:white;white-space:nowrap}.closing .button:hover{background:#284354}footer{border-top:1px solid #dfe5de;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px}footer .brand{font-size:14px}footer .brand span:last-child{color:#97623f}footer p{font-size:11px;color:var(--muted);margin:0;text-align:right}.skip-link{position:absolute;left:16px;top:-100px;background:white;color:#172a38;padding:14px;z-index:10;border-radius:6px}.skip-link:focus{top:12px}
+@media(max-width:900px){.hero-grid{gap:30px}.hero h1{font-size:50px}.journey{padding:24px}.calculator-grid{grid-template-columns:1.1fr 1fr;gap:18px}.card{padding:24px}.fields{grid-template-columns:1fr}.faq-layout{gap:40px}.privacy-tag{display:none}}
+@media(max-width:680px){.wrap{width:calc(100% - 36px)}.nav{min-height:70px;gap:12px}.brand{font-size:15px}.brand-mark{width:29px;height:29px;font-size:18px}.nav-links{gap:0}.nav-links>a:not(.nav-cta){display:none}.nav-cta{font-size:11px;padding:10px 13px}.hero-grid{grid-template-columns:1fr;padding-block:48px;gap:36px}.hero h1{font-size:clamp(40px,10vw,56px);letter-spacing:-2px}.hero-copy{font-size:15px}.hero-actions{gap:20px}.hero-actions .button{padding-inline:18px;gap:18px}.journey{max-width:440px;width:100%;margin-inline:auto}.journey h2{max-width:100%;font-size:25px}.road-art{max-height:130px}.assurance-grid{padding-block:20px;gap:18px;grid-template-columns:1fr}.assurance-item{justify-content:flex-start}.assurance-item+.assurance-item{border:0}.assurance-item small{display:inline;margin-left:6px}.assurance-item strong{display:inline}.section{padding:58px 0}.how-grid{grid-template-columns:1fr;gap:14px}.step{padding:24px}.step-number{margin-bottom:16px}.calculator-grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr 1fr}.faq-layout{grid-template-columns:1fr;gap:28px}.closing{padding-bottom:48px}.closing-inner{padding:30px 24px;align-items:flex-start;flex-direction:column;gap:24px}.closing h2{font-size:27px}.footer-inner{flex-direction:column;align-items:flex-start;gap:14px}footer p{text-align:left}.section-heading h2{font-size:31px}}
+@media(max-width:400px){.fields{grid-template-columns:1fr}.card{padding:22px}.hero-actions{align-items:flex-start;flex-direction:column}.assurance-item small{display:block;margin:4px 0 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#calculator">Terus ke kalkulator</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="Laman utama Josephine Proton"><span class="brand-mark" aria-hidden="true">J</span><span class="brand-copy"><span class="brand-name">JOSEPHINE</span><span class="brand-tag">PROTON · PAPAR</span></span></a>
+    <nav class="nav-links" aria-label="Navigasi utama">
+      <a href="#how-it-works">Cara guna</a><a href="#questions">Soalan lazim</a><a class="nav-cta" href="#calculator">Semak bajet saya ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Rancang dahulu. Pandu dengan yakin.</p>
+        <h1 id="hero-title">Kereta impian.<br><span>Bajet jelas.</span><br>Langkah bijak.</h1>
+        <p class="hero-copy">Sebelum jatuh hati pada kereta, kenali dahulu kemampuan anda. Kira anggaran ansuran bulanan dan lihat sama ada ia sesuai dengan bajet anda.</p>
+        <div class="hero-actions"><a class="button" href="#calculator">Kira ansuran saya <span aria-hidden="true">↗</span></a><a class="text-link" href="#how-it-works">Cara guna</a></div>
+        <p class="hero-footnote">Percuma. Tanpa pendaftaran. Tiada paksaan.</p>
+        <a class="advisor-card" href="https://wa.me/60168326344" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Josephine di 016-832 6344 (dibuka dalam tab baharu)">
+          <span class="advisor-avatar" aria-hidden="true">J</span>
+          <span class="advisor-copy">
+            <strong>JOSEPHINE</strong>
+            <span class="advisor-role">Penasihat jualan Proton</span>
+            <span class="advisor-location">OBM Automobil · Benoni, Papar, Sabah</span>
+            <span class="advisor-cta">WhatsApp · 016-832 6344 <span aria-hidden="true">↗</span></span>
+          </span>
+        </a>
+      </div>
+      <div class="journey">
+        <div class="journey-top"><span>LANGKAH SETERUSNYA</span><span>MALAYSIA</span></div>
+        <h2>Perjalanan yang baik<br>bermula dengan perancangan.</h2>
+        <svg class="road-art" viewBox="0 0 400 180" fill="none" aria-hidden="true">
+          <path d="M-10 165H243C326 165 326 87 243 87H139C72 87 72 15 139 15H410" stroke="currentColor" stroke-width="35" opacity=".09"/>
+          <path d="M-10 165H243C326 165 326 87 243 87H139C72 87 72 15 139 15H410" stroke="currentColor" stroke-width="1.5" stroke-dasharray="8 9" opacity=".65"/>
+          <circle cx="63" cy="165" r="6" fill="#c6f3dc"/><circle cx="347" cy="15" r="6" fill="currentColor"/>
+          <g transform="translate(198 69)">
+            <rect x="-3" y="-4" width="78" height="42" rx="15" fill="#101e2b"/>
+            <path d="M9 25V18L18 15L24 5H49L59 15L68 18V25H9Z" fill="#ffc09a"/>
+            <path d="M27 8H46L53 15H22L27 8Z" fill="#273f50"/>
+            <circle cx="22" cy="25" r="6" fill="#101e2b" stroke="#ffc09a" stroke-width="2"/><circle cx="55" cy="25" r="6" fill="#101e2b" stroke="#ffc09a" stroke-width="2"/>
+          </g>
+        </svg>
+        <div class="journey-bottom"><span class="journey-icon" aria-hidden="true">↗</span><div><strong>Semak bajet, baru memandu.</strong><p>Anggaran jelas, bukan sekadar agak-agak.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <div class="assurance">
+    <div class="wrap assurance-grid">
+      <div class="assurance-item"><span class="check" aria-hidden="true">✓</span><div><strong>Percuma digunakan</strong><small>Tiada caj pengiraan</small></div></div>
+      <div class="assurance-item"><span class="check" aria-hidden="true">✓</span><div><strong>Tanpa pendaftaran</strong><small>Terus dapatkan anggaran anda</small></div></div>
+      <div class="assurance-item"><span class="check" aria-hidden="true">✓</span><div><strong>Maklumat kekal di sini</strong><small>Dikira dalam pelayar anda</small></div></div>
+    </div>
+  </div>
+  <section class="section" id="how-it-works" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-heading"><p class="eyebrow">Lebih jelas, lebih yakin</p><h2 id="how-title">Kenali bajet anda dalam tiga langkah.</h2><p>Tak perlu dokumen untuk bermula. Cukup dengan beberapa angka asas.</p></div>
+      <div class="how-grid">
+        <article class="step"><span class="step-number">01 / MULA</span><h3>Masukkan maklumat kereta</h3><p>Isi harga kereta, bayaran pendahuluan, kadar faedah rata dan tempoh pinjaman pilihan anda.</p></article>
+        <article class="step"><span class="step-number">02 / SEMAK</span><h3>Lihat gambaran menyeluruh</h3><p>Masukkan pendapatan dan komitmen semasa untuk melihat anggaran ansuran serta nisbah khidmat hutang anda.</p></article>
+        <article class="step"><span class="step-number">03 / RANCANG</span><h3>Cari bajet yang selesa</h3><p>Cuba ubah bayaran pendahuluan atau tempoh pinjaman. Gunakan anggaran ini sebagai panduan sebelum berbincang dengan bank.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="section calculator-section" id="calculator" aria-labelledby="calculator-title">
+    <div class="wrap">
+      <div class="calculator-heading"><div class="section-heading"><p class="eyebrow">Jom kira dahulu</p><h2 id="calculator-title">Berapa anggaran ansuran bulanan anda?</h2><p>Anggaran ringkas hari ini. Keputusan lebih bijak nanti.</p></div><span class="privacy-tag">Tak perlu dokumen peribadi</span></div>
+      <div class="calculator-grid">
+        <div class="card">
+          <h3>Maklumat asas anda</h3><p class="muted">Ubah angka contoh mengikut bajet dan keadaan anda.</p>
+          <form id="form"><div class="fields">
+            <div><label for="price">Harga kereta (RM)</label><input id="price" type="number" min="1000" max="1000000" value="65000" required></div>
+            <div><label for="deposit">Bayaran pendahuluan (RM)</label><input id="deposit" type="number" min="0" value="6500" required></div>
+            <div><label for="rate">Kadar faedah rata setahun (%)</label><input id="rate" type="number" min="0" max="30" step=".1" value="3.0" required></div>
+            <div><label for="years">Tempoh pinjaman</label><select id="years"><option value="3">3 tahun</option><option value="5">5 tahun</option><option value="7" selected>7 tahun</option><option value="9">9 tahun</option></select></div>
+            <div><label for="income">Pendapatan kasar bulanan (RM)</label><input id="income" type="number" min="0" value="3500" required></div>
+            <div><label for="commitments">Komitmen bulanan sedia ada (RM)</label><input id="commitments" type="number" min="0" value="500" required></div>
+          </div><button class="button calculate" type="submit">Kira anggaran saya <span aria-hidden="true">↗</span></button></form>
+          <p class="note">Pengiraan sewa beli berasaskan kadar faedah rata ini hanyalah contoh. Kadar bank, struktur pembiayaan, fi dan syarat kelayakan sebenar mungkin berbeza.</p>
+        </div>
+        <aside class="card estimate" aria-labelledby="estimate-title">
+          <h3 id="estimate-title">Ringkasan bajet anda</h3><p class="muted">Dikemas kini setiap kali anda menekan butang kira.</p>
+          <div class="result" aria-live="polite" aria-atomic="true">
+            <p class="result-label">ANGGARAN ANSURAN</p><div id="payment" class="amount">RM —</div><p class="payment-period">sebulan</p>
+            <p id="summary">Isi maklumat anda untuk melihat anggaran.</p>
+            <div class="stat"><span>Jumlah pokok pinjaman</span><strong id="principal">—</strong></div>
+            <div class="stat"><span>Jumlah faedah rata</span><strong id="interest">—</strong></div>
+            <div class="stat"><span>Anggaran DSR</span><strong id="dsr">—</strong></div>
+            <div id="status" class="status">Menunggu pengiraan</div>
+          </div>
+          <p class="note"><strong>Sekadar panduan, bukan kelulusan pinjaman.</strong> Demo ini menggunakan DSR ≤ 60% dan pendapatan kasar bulanan ≥ RM 2,000. Bank menetapkan syarat sendiri, termasuk sejarah kredit, pekerjaan dan usia kenderaan.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="questions" aria-labelledby="faq-title">
+    <div class="wrap faq-layout">
+      <div class="section-heading"><p class="eyebrow">Sebelum melangkah lebih jauh</p><h2 id="faq-title">Ada soalan?<br>Ini jawapannya.</h2><p>Fahami kegunaan anggaran ini dan perkara yang masih perlu disemak dengan pihak bank.</p></div>
+      <div class="faq-list">
+        <details open><summary>Adakah ini bermakna pinjaman saya lulus?</summary><p>Tidak. Keputusan kemampuan ini berdasarkan syarat contoh dalam demo, bukan keputusan bank. Kelulusan sebenar bergantung pada penilaian pemberi pinjaman terhadap pendapatan, komitmen, sejarah kredit dan faktor lain.</p></details>
+        <details><summary>Bagaimanakah ansuran bulanan dikira?</summary><p>Jumlah pembiayaan ialah harga kereta ditolak bayaran pendahuluan. Faedah rata dikira dengan mendarab jumlah itu dengan kadar faedah rata setahun dan bilangan tahun pinjaman. Jumlah pokok bersama faedah kemudian dibahagi dengan bilangan bulan bayaran. Fi dan insurans tidak termasuk.</p></details>
+        <details><summary>Apakah maksud DSR?</summary><p>Nisbah khidmat hutang (DSR) membandingkan bayaran hutang bulanan dengan pendapatan anda. Di sini, komitmen bulanan sedia ada ditambah dengan anggaran ansuran kereta, kemudian dibahagi dengan pendapatan kasar bulanan anda. Bank mungkin menggunakan kaedah berbeza, termasuk pendapatan bersih.</p></details>
+        <details><summary>Adakah maklumat pendapatan saya dihantar ke mana-mana?</summary><p>Tidak. Kalkulator memproses angka dalam pelayar anda sahaja. Maklumat ini tidak dihantar ke pelayan atau disimpan. Nama, nombor telefon, nombor kad pengenalan dan slip gaji juga tidak diperlukan.</p></details>
+        <details><summary>Apakah langkah seterusnya selepas mendapat anggaran?</summary><p>Pastikan ansuran masih memberi ruang untuk minyak, insurans, cukai jalan, penyelenggaraan dan simpanan. Kemudian, rujuk bank atau penasihat jualan bertauliah untuk kadar semasa, fi dan penilaian rasmi.</p></details>
+      </div>
+    </div>
+  </section>
+  <section class="closing" aria-labelledby="closing-title"><div class="wrap closing-inner"><div><h2 id="closing-title">Kenali bajet anda.<br>Melangkah dengan lebih yakin.</h2><p>Luangkan seminit untuk bajet sebelum memilih kereta.</p></div><a class="button" href="#calculator">Semak bajet saya <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#" aria-label="Laman utama Josephine Proton">Josephine<span>Proton</span></a><p>© 2026 Josephine Proton · Benoni, Papar, Sabah.<br>Laman peribadi penasihat jualan, bukan laman rasmi Proton atau bank.<br>Anggaran sahaja. Maklumat kalkulator kekal dalam pelayar anda.</p></div></footer>
+<script>
+const rm = n => new Intl.NumberFormat('ms-MY',{style:'currency',currency:'MYR',maximumFractionDigits:2}).format(n);
+document.getElementById('form').addEventListener('submit',e=>{
+ e.preventDefault();
+ const get=id=>Number(document.getElementById(id).value);
+ const price=get('price'),deposit=get('deposit'),rate=get('rate'),years=get('years'),income=get('income'),commitments=get('commitments');
+ if(![price,deposit,rate,years,income,commitments].every(Number.isFinite)||price<=0||deposit<0||deposit>=price||rate<0||income<=0||commitments<0){alert('Sila masukkan amaun yang sah. Bayaran pendahuluan mestilah kurang daripada harga kereta.');return;}
+ const principal=price-deposit, interest=principal*rate/100*years,monthly=(principal+interest)/(years*12),dsr=(monthly+commitments)/income*100,eligible=income>=2000&&dsr<=60;
+ document.getElementById('payment').textContent=rm(monthly);
+ document.getElementById('principal').textContent=rm(principal);
+ document.getElementById('interest').textContent=rm(interest);
+ document.getElementById('dsr').textContent=dsr.toFixed(1)+'%';
+ document.getElementById('summary').textContent=`Berdasarkan pinjaman kereta selama ${years} tahun pada kadar faedah rata ${rate.toFixed(1)}% setahun.`;
+ const status=document.getElementById('status');
+ status.className='status '+(eligible?'ok':'warn');
+ status.textContent=eligible?'✓ Memenuhi syarat kemampuan demo':'! Tidak memenuhi syarat kemampuan demo';
+});
+document.getElementById('form').requestSubmit();
+</script>
+</body></html>
